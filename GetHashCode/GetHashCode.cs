@@ -9,6 +9,7 @@ namespace Vsite.CSharp
 
     // TODO: Implementirati metodu GetHashCode u klasi Osoba iz projekta MetodaEqualsZaReferentiTip tako da se metoda Main može izvesti bez problema
 
+
     class Program
     {
         static void Main(string[] args)
@@ -18,7 +19,7 @@ namespace Vsite.CSharp
             mjestaRođenja[new Osoba("Janko", 2)] = "Jarče Polje";
             mjestaRođenja[new Osoba("Darko", 3)] = "Vukova Gorica";
 
-            Console.WriteLine(mjestaRođenja[new Osoba("Pero", 1)]);
+            // Console.WriteLine(mjestaRođenja[new Osoba("Pero", 1)]);
             Console.WriteLine(mjestaRođenja[new Osoba("Janko", 2)]);
             Console.WriteLine(mjestaRođenja[new Osoba("Darko", 3)]);
 

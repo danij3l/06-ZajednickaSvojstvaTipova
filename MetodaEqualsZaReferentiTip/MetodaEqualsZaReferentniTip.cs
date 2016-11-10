@@ -29,7 +29,10 @@ namespace Vsite.CSharp
 
         // TODO: Pregaziti (override) metodu Equals(object) tako da poziva Equals(Osoba)
 
-
+        public override int GetHashCode()
+        {
+            return m_ime.GetHashCode() ^m_matičniBroj;
+        }
 
         public override string ToString()
         {
