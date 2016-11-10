@@ -4,7 +4,7 @@ using System.Diagnostics;
 namespace Vsite.CSharp
 {
     // TODO: Definirati da klasa Osoba implementira sučelje IEquatable<Osoba>
-    public class Osoba
+    public class Osoba : ICloneable
     {
         public Osoba(string ime, int matičniBroj)
         {
@@ -48,6 +48,11 @@ namespace Vsite.CSharp
         {
             return !(a == b);
         }
+    }
+
+    public interface ICloneable
+    {
+        return new Osoba(m_ime, m_maticniBroj);
     }
 
     public class MetodaEqualsZaReferentniTip
